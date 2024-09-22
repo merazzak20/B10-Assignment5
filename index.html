@@ -4,8 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B10-Assignment5</title>
-</head>
-<body>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- DaisyUI & Tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .lexend{
+            font-family: "Lexend", sans-serif;
+        }
+        .containern{
+          width: 90%;
+        }
+      </style>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                primaryColor: '#B4F461',
+                bodyColor:'#F9F7F3;',
+                bColor: 'rgb(171, 239, 95)',
+                fColor: '#1C1C1C',
+              },
+              
+            }
+          }
+        }
+      </script>
+
+</head>
+<body class="lexend bg-bodyColor">
+    <header class="mx-auto">
+        <div class="navbar flex justify-between p-4 py-6 mx-auto pb-11 containern">
+            <div class="navbar-start">
+                <button id="btnBlogs" class="btn bg-primaryColor">Blogs</button>
+            </div>
+            <div class="navbar-center flex items-center">
+                <img src="assets/logo.png" alt="">
+                <h1 class="font-bold text-base md:text-2xl ml-4 mt-3">Donate Bangladesh</h1>
+            </div>
+            <div class="navbar-end">
+                <img src="assets/coin.png" alt="">
+                <h3 id="totalBalance" class="font-semibold text-base lg:text-2xl ml-4">5000</h3>
+            </div>
+        </div>
+
+        <div class="headerButtons mx-auto text-center space-x-3 bg-white py-6 pt-16">
+            <button class="btn bg-primaryColor">Donation</button>
+            <button class="btn btn-outline btnHistory">History</button>
+        </div>
+            
+    </header>
+
+    <main class="mx-auto bg-white py-10">
+        <section id="cards" class="containern mx-auto space-y-7">
+
+            <!-- Card 1 -->
+            <div class="bg-base-100 border border-gray-200 rounded-lg p-5 grid grid-cols-1 lg:grid-cols-2 gap-0">
+                <div class="imgBox">
+                    <img
+                    src="assets/noakhali.png"
+                    alt="Movie" />
+                </div>
+                <div class="text-left">
+                    <div class="moneyPart py-4 px-3 rounded-lg bg-gray-100 w-1/5 flex mb-4">
+                        <img src="assets/coin.png" alt="">
+                        <h4 id="noakhaliDemoAmount" class="font-semibold text-xl ml-3">5000</h4>
+                    </div>
+                    <h2 class="card-title mb-3">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                    <input type="text" placeholder="Write Donation Amount" id="noakhalAmounField" class="input input-bordered w-full mt-6 block" />
+                    <button id="noakhalButton" class="btn bg-primaryColor w-full mt-5">Donate Now</button>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="bg-base-100 border border-gray-200 rounded-lg p-5 grid grid-cols-1 lg:grid-cols-2 gap-0">
+                <div class="imgBox">
+                    <img
+                    src="assets/feni.png"
+                    alt="Movie" />
+                </div>
+                <div class="text-left">
+                    <div class="moneyPart py-4 px-3 rounded-lg bg-gray-100 w-1/5 flex mb-4">
+                        <img src="assets/coin.png" alt="">
+                        <h4 class="font-semibold text-xl ml-3">5000</h4>
+                    </div>
+                    <h2 class="card-title mb-3">Donate for Flood Relief in Feni,Bangladesh</h2>
+                    <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                    <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mt-6 block" />
+                    <button class="btn bg-primaryColor w-full mt-5">Donate Now</button>
+                </div>
+              </div>
+
+
+            <!-- Card 3 -->
+              <div class="bg-base-100 border border-gray-200 rounded-lg p-5 grid grid-cols-1 lg:grid-cols-2 gap-0">
+                <div class="imgBox">
+                    <img
+                    src="assets/quota-protest.png"
+                    alt="Movie" />
+                </div>
+                <div class="text-left">
+                    <div class="moneyPart py-4 px-3 rounded-lg bg-gray-100 w-1/5 flex mb-4">
+                        <img src="assets/coin.png" alt="">
+                        <h4 class="font-semibold text-xl ml-3">5000</h4>
+                    </div>
+                    <h2 class="card-title mb-3">Aid for Injured in the Quota Movement</h2>
+                    <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                    <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mt-6 block" />
+                    <button class="btn bg-primaryColor w-full mt-5">Donate Now</button>
+                </div>
+              </div>
+        </section>
+    </main>
+
+    <script src="./JS/main.js"></script>
+    <script src="./JS/utility.js"></script>
 </body>
 </html>
