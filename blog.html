@@ -46,7 +46,7 @@
     <header class="mx-auto">
         <div class="navbar flex justify-between p-4 py-6 mx-auto pb-11 containern">
             <div class="navbar-start">
-                <button id="btnBlogs" class="btn bg-primaryColor">Blogs</button>
+                <button id="btnHome" class="btn bg-primaryColor">Home</button>
             </div>
             <div class="navbar-center flex items-center">
                 <img src="assets/logo.png" alt="">
@@ -58,10 +58,10 @@
             </div>
         </div>
 
-        <div class="headerButtons mx-auto text-center space-x-3 bg-white py-6 pt-16">
-            <button class="btn bg-primaryColor">Donation</button>
-            <button class="btn btn-outline btnHistory">History</button>
-        </div>
+        <div id="headerButtons" class="headerButtons mx-auto text-center space-x-3 bg-white py-6 pt-16">
+          <button id="btnDonation" class="btn bg-primaryColor">Donation</button>
+          <button id="btnHistory" class="btn btn-outline btnHistory">History</button>
+      </div>
             
     </header>
 
@@ -102,5 +102,13 @@
             </div>
         </section>
     </main>
+
+    <script src="./JS/main.js"></script>
+    <script src="./JS/utility.js"></script>
+    <script>
+      document.getElementById('btnHome').addEventListener('click',function(){
+    window.location.href = 'https://merazzak20.github.io/B10-Assignment5/';
+})
+    </script>
 </body>
 </html>

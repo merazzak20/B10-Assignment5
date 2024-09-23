@@ -13,3 +13,13 @@ function getInnerText(id){
 function tag(id){
     return document.getElementById(id);
 }
+
+
+// tag('modal').classList.add('modal-box-open');
+
+// function closeModal() {
+//     document.getElementById('btnModal').addEventListener('click', function() {
+//         document.getElementById('modal').classList.add('hidden');
+//         console.log(2)
+//     });
+// }

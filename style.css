@@ -6,8 +6,12 @@ html {
     position: fixed;
     top: 0;
     width: 100%;
-    backdrop-filter: blur(8px);
-    background-color: #F9F7F3;
+    backdrop-filter: blur(10px);
+    background-color: #f9f7f3d5;
+}
+
+#btnBlogs{
+    border: none;
 }
 .btnHistory:hover{
     background-color: #B4F461;
@@ -15,3 +19,31 @@ html {
     outline: none;
     border: none;
 }
+#btnDonation:hover{
+    background-color: #B4F461;
+    color: #333437;
+    outline: none;
+    border: none;
+}
+
+.modal-box{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.5s ease-out;
+}
+.modal-box-open{
+    transform: translate(-50%, -50%) scale(100%);
+    transition: all 0.5s ease-in;
+}
+
+#historyContainer h4{
+    font-weight: bold;
+}
+.invisible{
+    display: none;
+}
+/* .text-left .moneyPart{
+    width: 25%;
+} */
