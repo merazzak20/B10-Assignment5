@@ -21,10 +21,6 @@ document.getElementById('btnBlogs').addEventListener('click',function(){
     window.location.href ='https://merazzak20.github.io/B10-Assignment5/blog.html';
 })
 
-// tag('btnHome').addEventListener('click',function(){
-//     window.location.href ='./index.html';
-// })
-
 
 // Donation Button & History Button
 document.getElementById('btnHistory').addEventListener('click',function(){  
@@ -33,6 +29,7 @@ document.getElementById('btnHistory').addEventListener('click',function(){
     tag('btnDonation').classList.remove('bg-primaryColor');
     tag('btnDonation').classList.add('btn-outline');
     tag('cards').classList.add('hidden');
+    
     tag('historyContainer').classList.remove('hidden');
 
 })
@@ -45,6 +42,8 @@ document.getElementById('btnDonation').addEventListener('click',function(){
     tag('historyContainer').classList.add('hidden');
 
 })
+
+const donationHistory = [];
 
 // For Card 1
 document.getElementById('noakhaliButton').addEventListener('click', function(){
@@ -74,6 +73,7 @@ document.getElementById('noakhaliButton').addEventListener('click', function(){
         <p>${new Date().toLocaleString()}</p>
     `
     tag('historyContainer').insertBefore(divHistory,  historyContainer.firstChild);
+    
 })
 
 // For Card 2
@@ -100,7 +100,7 @@ document.getElementById('feniButton').addEventListener('click', function(){
     const divHistory = document.createElement('div');
     divHistory.className = 'bg-base-100 border border-gray-200rounded-lg px-6 py-4';
     divHistory.innerHTML = `
-        <h4 class"text-base font-bold">${amountFeni} Taka isDonate for ${campaignTitle2.innerText}</h4>
+        <h4 class"text-base font-bold">${amountFeni} Taka is Donate for ${campaignTitle2.innerText}</h4>
         <p>${new Date().toLocaleString()}</p>
     `
     tag('historyContainer').insertBefore(divHistory,historyContainer.firstChild);
