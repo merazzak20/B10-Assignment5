@@ -43,7 +43,7 @@
 
 </head>
 <body class="lexend bg-bodyColor">
-    <header class="mx-auto">
+    <header id="header" class="mx-auto">
         <div class="navbar flex justify-between p-4 py-6 mx-auto pb-11 containern">
             <div class="navbar-start">
                 <button id="btnBlogs" class="btn bg-primaryColor">Blogs</button>
@@ -54,11 +54,11 @@
             </div>
             <div class="navbar-end">
                 <img src="assets/coin.png" alt="">
-                <h3 id="totalBalance" class="font-semibold text-base lg:text-2xl ml-4">5000</h3>
+                <h3 id="totalBalance" class="font-semibold text-base lg:text-2xl ml-2 md:ml-4">5000</h3>
             </div>
         </div>
 
-        <div class="headerButtons mx-auto text-center space-x-3 bg-white py-6 pt-16">
+        <div id="headerButtons" class="headerButtons mx-auto text-center space-x-3 bg-white py-6 pt-16">
             <button class="btn bg-primaryColor">Donation</button>
             <button class="btn btn-outline btnHistory">History</button>
         </div>
@@ -70,59 +70,59 @@
 
             <!-- Card 1 -->
             <div class="bg-base-100 border border-gray-200 rounded-lg p-5 grid grid-cols-1 lg:grid-cols-2 gap-0">
-                <div class="imgBox">
+                <div class="imgBox mb-5 md:mb-0">
                     <img
                     src="assets/noakhali.png"
                     alt="Movie" />
                 </div>
                 <div class="text-left">
-                    <div class="moneyPart py-4 px-3 rounded-lg bg-gray-100 w-1/5 flex mb-4">
+                    <div class="moneyPart py-4 px-3 rounded-lg bg-gray-100 w-1/4 md:w-1/5 flex mb-4">
                         <img src="assets/coin.png" alt="">
                         <h4 id="noakhaliDemoAmount" class="font-semibold text-xl ml-3">5000</h4>
                     </div>
                     <h2 class="card-title mb-3">Donate for Flood at Noakhali, Bangladesh</h2>
                     <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                    <input type="text" placeholder="Write Donation Amount" id="noakhalAmounField" class="input input-bordered w-full mt-6 block" />
-                    <button id="noakhalButton" class="btn bg-primaryColor w-full mt-5">Donate Now</button>
+                    <input type="text" placeholder="Write Donation Amount" id="noakhaliAmounField" class="input input-bordered w-full mt-6 block" />
+                    <button id="noakhaliButton" class="btn bg-primaryColor w-full mt-5">Donate Now</button>
                 </div>
               </div>
 
               <!-- Card 2 -->
               <div class="bg-base-100 border border-gray-200 rounded-lg p-5 grid grid-cols-1 lg:grid-cols-2 gap-0">
-                <div class="imgBox">
+                <div class="imgBox mb-5 md:mb-0">
                     <img
                     src="assets/feni.png"
                     alt="Movie" />
                 </div>
                 <div class="text-left">
-                    <div class="moneyPart py-4 px-3 rounded-lg bg-gray-100 w-1/5 flex mb-4">
+                    <div class="moneyPart py-4 px-3 rounded-lg bg-gray-100 w-1/4 md:w-1/5 flex mb-4">
                         <img src="assets/coin.png" alt="">
-                        <h4 class="font-semibold text-xl ml-3">5000</h4>
+                        <h4 id="feniDemoAmount" class="font-semibold text-xl ml-3">4000</h4>
                     </div>
                     <h2 class="card-title mb-3">Donate for Flood Relief in Feni,Bangladesh</h2>
                     <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                    <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mt-6 block" />
-                    <button class="btn bg-primaryColor w-full mt-5">Donate Now</button>
+                    <input type="text" placeholder="Write Donation Amount" id="feniAmounField" class="input input-bordered w-full mt-6 block" />
+                    <button id="feniButton" class="btn bg-primaryColor w-full mt-5">Donate Now</button>
                 </div>
               </div>
 
 
             <!-- Card 3 -->
               <div class="bg-base-100 border border-gray-200 rounded-lg p-5 grid grid-cols-1 lg:grid-cols-2 gap-0">
-                <div class="imgBox">
+                <div class="imgBox mb-5 md:mb-0">
                     <img
                     src="assets/quota-protest.png"
                     alt="Movie" />
                 </div>
                 <div class="text-left">
-                    <div class="moneyPart py-4 px-3 rounded-lg bg-gray-100 w-1/5 flex mb-4">
+                    <div class="moneyPart py-4 px-3 rounded-lg bg-gray-100 w-1/4 md:w-1/5 flex mb-4">
                         <img src="assets/coin.png" alt="">
-                        <h4 class="font-semibold text-xl ml-3">5000</h4>
+                        <h4 id="quotaDemoAmount" class="font-semibold text-xl ml-3">500</h4>
                     </div>
                     <h2 class="card-title mb-3">Aid for Injured in the Quota Movement</h2>
                     <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                    <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mt-6 block" />
-                    <button class="btn bg-primaryColor w-full mt-5">Donate Now</button>
+                    <input type="text" placeholder="Write Donation Amount" id="quotaAmounField" class="input input-bordered w-full mt-6 block" />
+                    <button id="quotaButton" class="btn bg-primaryColor w-full mt-5">Donate Now</button>
                 </div>
               </div>
         </section>

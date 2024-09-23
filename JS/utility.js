@@ -1,8 +1,15 @@
 
+// Get Input Value
 function getInputValue(id){
-    return document.getElementById(id).value;
+    return parseFloat(document.getElementById(id).value);
 }
 
+// Get Inner Text
 function getInnerText(id){
-    return document.getElementById(id).innerText;
+    return parseFloat(document.getElementById(id).innerText);
+}
+
+// Get Tag
+function tag(id){
+    return document.getElementById(id);
 }

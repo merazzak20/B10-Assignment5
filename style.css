@@ -1,5 +1,14 @@
 
-
+html {
+    scroll-behavior: smooth;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(8px);
+    background-color: #F9F7F3;
+}
 .btnHistory:hover{
     background-color: #B4F461;
     color: #333437;
